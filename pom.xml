@@ -6,7 +6,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <mainClass>calcfx.CalcFxApp</mainClass>
+    <calc.mainClass>calcfx.CalcFxApp</calc.mainClass>
   </properties>
   <build>
     <plugins>
@@ -21,6 +21,10 @@
       <plugin>
         <groupId>com.zenjava</groupId>
         <artifactId>javafx-maven-plugin</artifactId>
+        <version>8.1.2</version>
+        <configuration>
+          <mainClass>${calc.mainClass}</mainClass>
+        </configuration>
       </plugin>
     </plugins>
   </build>

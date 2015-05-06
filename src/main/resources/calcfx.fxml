@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calcfx.CalcController">
+   <children>
+      <VBox prefHeight="50.0" prefWidth="554.0" style="-fx-padding: 10px;">
+         <children>
+            <TextField fx:id="inputView" alignment="CENTER_RIGHT" disable="true" focusTraversable="false" prefHeight="50.0" prefWidth="517.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </TextField>
+         </children>
+      </VBox>
+      <TilePane layoutX="14.0" layoutY="64.0" prefColumns="4" prefHeight="574.0" prefTileHeight="115.0" prefTileWidth="131.0" prefWidth="525.0">
+         <children>
+            <Button fx:id="clearBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onClearBtnAction" prefHeight="90.0" prefWidth="90.0" text="C" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" text="B1" textAlignment="CENTER" visible="false" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" disable="true" focusTraversable="false" mnemonicParsing="false" prefHeight="90.0" prefWidth="90.0" text="B2" textAlignment="CENTER" visible="false" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="divBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onDivisionBtnAction" prefHeight="90.0" prefWidth="90.0" text="/" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="sevenBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="7" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="eightBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="8" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="nineBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="9" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="multiBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onMultiplicationBtnAction" prefHeight="90.0" prefWidth="90.0" text="*" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="fourBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="4" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="fiveBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="5" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="sixBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="6" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="minusBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onMinusBtnAction" prefHeight="90.0" prefWidth="90.0" text="-" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="oneBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="1" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="twoBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="2" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="threeBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="3" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="plusBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onPlusBtnAction" prefHeight="90.0" prefWidth="90.0" text="+" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="zeroBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="0" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="00" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onNumberBtnAction" prefHeight="90.0" prefWidth="90.0" text="." textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="equalBtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#onEqualBtnAction" prefHeight="90.0" prefWidth="90.0" text="=" textAlignment="CENTER" TilePane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </TilePane>
+   </children>
+</AnchorPane>
